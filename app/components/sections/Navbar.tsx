@@ -8,8 +8,8 @@ import { useRouter } from "next/navigation"
 
 const navItems = [
   { label: "Home", href: "/#home" },
-  { label: "Cortinas", href: "/cortinas-e-persianas" },
-  { label: "Persianas", href: "/cortinas-e-persianas" },
+  { label: "Cortinas", href: "/cortinas-e-persianas#cortinas" },
+  { label: "Persianas", href: "/cortinas-e-persianas#persianas" },
   { label: "Sobre", href: "/#sobre" },
   { label: "Contato", href: "/#contato" },
 ]
@@ -46,19 +46,21 @@ export function Navbar() {
   requestAnimationFrame(step)
 }
 
-  const handleNavigation = (href: string) => {
+const handleNavigation = (href: string) => {
   if (href.includes("#")) {
-    const id = href.split("#")[1]
+    const [path, id] = href.split("#")
 
-    if (window.location.pathname !== "/") {
+    // se estiver em outra página, navega primeiro
+    if (window.location.pathname !== path) {
       router.push(href)
       return
     }
 
     const el = document.getElementById(id)
+
     if (el) {
       const y = el.getBoundingClientRect().top + window.scrollY - 80
-      smoothScrollTo(y, 1400) // 👈 controla velocidade aqui
+      smoothScrollTo(y, 1400)
     }
 
     return

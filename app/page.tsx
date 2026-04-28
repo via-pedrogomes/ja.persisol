@@ -3,6 +3,7 @@ import { Galeria } from "./components/sections/Galeria";
 import { Hero } from "./components/sections/Hero";
 import { Produtos } from "./components/sections/Produtos";
 import { Sobre } from "./components/sections/Sobre";
+import { Videos } from "./components/sections/Videos";
 
 export const metadata = {
   title: "Persianas e Cortinas em Curitiba | Sob Medida",

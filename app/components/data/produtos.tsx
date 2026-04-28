@@ -386,7 +386,7 @@ export const produtos = [
     },
     {
         slug: "persiana-horizontal-aluminio",
-        nome: "Horizontal de aluminio - 16mm, 25mm, 50mm",
+        nome: "Horizontal de aluminio - 50mm",
         sub: 'Elegância e Versatilidade para Qualquer Ambiente',
         modelos: "50mm",
         categoria: "persianas",
@@ -399,7 +399,7 @@ export const produtos = [
                 </p>
 
                 <p>
-                    Disponível em <strong>16mm, 25mm e 50mm</strong>.
+                    Disponível em <strong>50mm</strong>.
                 </p>
 
                 <div>

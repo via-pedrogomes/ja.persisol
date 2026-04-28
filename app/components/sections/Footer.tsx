@@ -30,7 +30,7 @@ export default function Footer() {
 
                 {/* descrição */}
                 <p className={`${inter.className} text-[#CFCFCF] max-w-md mb-8`}>
-                    Lorem Ipsum is simply dummy text of the sprinting of the printing
+                    Elegância, conforto e praticidade para o seu ambiente.
                 </p>
 
                 {/* redes */}

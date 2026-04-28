@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Cortina from './HeroImages/TestMobile2.jpeg'
 import CortinaCard from '../utils/CortinasImages/cortinaCard.jpeg'
-import Persiana from './HeroImages/image.png'
+import Persiana from '../utils/PersianasImages/persianaProdutos.jpeg'
 import Link from "next/link";
 import { Playfair_Display, Inter } from "next/font/google"
 
@@ -44,7 +44,7 @@ export function ProdutosCard() {
 
                         <p className={`text-center text-xl text-[#CFCFCF] ${inter.className}`}>{item.desc}</p>
 
-                        <Link href='/cortinas-e-persianas'>
+                        <Link href={item.nome === 'Persianas' ? '/cortinas-e-persianas#persianas' : '/cortinas-e-persianas#cortinas'}>
                             <button className={`bg-[#C7A62B] px-15 py-1 rounded text-white ${inter.className} transition cursor-pointer hover:bg-[#977e22]`}>Veja Mais</button>
                         </Link>
                     </div>

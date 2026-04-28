@@ -5,6 +5,8 @@ import TestMobile1 from '../utils/HeroImages/testeMobile1.jpeg'
 import TestMobile2 from '../utils/HeroImages/TestMobile2.jpeg'
 import HeroTeste from '../utils/HeroImages/heroTeste.jpeg'
 
+import ftMobile from '../utils/PersianasImages/persianaProdutos.jpeg'
+
 import { Playfair_Display, Inter } from "next/font/google"
 
 const playFair = Playfair_Display({
@@ -35,7 +37,7 @@ export function Hero() {
           {/* Mobile */}
           <div
             className="block md:hidden absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${TestMobile2.src})` }}
+            style={{ backgroundImage: `url(${ftMobile.src})` }}
           />
 
           {/* Overlay */}

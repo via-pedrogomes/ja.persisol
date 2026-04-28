@@ -29,11 +29,11 @@ export default function Carousel() {
         prevEl: ".prev-btn",
     }}
     autoplay={{
-    delay: 2000,
+    delay: 3000,
     disableOnInteraction: false,
   }}
     spaceBetween={20}
-    speed={1000}
+    speed={1500}
     slidesPerView={1}
     breakpoints={{
         640: { slidesPerView: 2 },

@@ -1,5 +1,6 @@
 import { Playfair_Display, Inter } from "next/font/google"
 import Carousel from "../utils/carrosselGaleria"
+import CarrosselVideos from "../utils/carrosselVideos"
 
 const playFair = Playfair_Display({
     subsets: ['latin'],
@@ -18,8 +19,12 @@ export function Galeria(){
             <div className="px-5 lg:px-10">
                 <div className="text-center pb-15">
                     <h2 className={`text-5xl  text-[#C7A62B] font-bold tracking-wide ${playFair.className}`}>
-                        Galeria
+                        Confira nossas persianas e cortinas na prática
                     </h2>
+                </div>
+
+                <div className="pb-15">
+                    <CarrosselVideos />
                 </div>
 
                 <div>

@@ -40,7 +40,7 @@ const cortinas = [
 
 export function CortinasTypes() {
   return (
-   <div className="grid gap-5 pt-10 px-5 sm:grid-cols-2 md:grid-cols-3 lg:px-10">
+   <div id='cortinas' className="scroll-mt-50 grid gap-5 pt-10 px-5 sm:grid-cols-2 md:grid-cols-3 lg:px-10">
   {cortinas.map((item) => (
     <Link key={item.id} href={`/cortinas-e-persianas/${item.slug}`}>
       <div className="relative group overflow-hidden cursor-pointer h-120 ">

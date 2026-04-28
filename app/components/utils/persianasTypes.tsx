@@ -69,7 +69,7 @@ const persianas = [
   {
     id: 9,
     img: HA,
-    nome: "Horizontal de aluminio - 16mm, 25mm, 50mm",
+    nome: "Horizontal de aluminio - 50mm",
     slug: "persiana-horizontal-aluminio",
   },
   {
@@ -82,7 +82,7 @@ const persianas = [
 
 export function PersianasTypes() {
   return (
-    <div className="grid gap-5 pt-10 px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
+    <div id='persianas' className="scroll-mt-24 grid gap-5 pt-10 px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
       {persianas.map((item) => (
         <Link key={item.id} href={`/cortinas-e-persianas/${item.slug}`}>
           <div className="relative group overflow-hidden cursor-pointer h-120">
