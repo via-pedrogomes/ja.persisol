@@ -49,7 +49,7 @@ export default async function TipoPage({ params }: TipoPageProps) {
     }
 
     return (
-        <div className="px-5 py-20 flex flex-col items-center">
+        <div className="bg-white px-5 py-20 flex flex-col items-center">
 
             {/* Título */}
             <h1 className={`text-5xl  text-[#C7A62B] font-bold mb-1 text-center ${playFair.className}`}>

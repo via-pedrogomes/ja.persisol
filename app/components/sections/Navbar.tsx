@@ -70,7 +70,7 @@ const handleNavigation = (href: string) => {
 }
 
   return (
-    <header className="h-30 relative z-50">
+    <header className="bg-white h-30 relative z-50">
       {/* mantém suas medidas (px-20 etc). só adiciona position relative */}
       <div className="flex items-center justify-between px-5 relative lg:px-10">
         <div>

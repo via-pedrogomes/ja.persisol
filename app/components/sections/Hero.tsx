@@ -21,7 +21,7 @@ const inter = Inter({
 
 export function Hero() {
   return (
-    <div className="flex flex-col items-center pt-7" id="home">
+    <div className="bg-white flex flex-col items-center pt-7" id="home">
 
       {/* Wrapper que controla margem */}
       <div className="w-full px-5 lg:px-10">

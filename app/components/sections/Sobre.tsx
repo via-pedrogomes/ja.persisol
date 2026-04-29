@@ -14,7 +14,7 @@ const inter = Inter({
 
 export function Sobre() {
     return (
-        <div className="pt-15" id="sobre">
+        <div className="pt-15 bg-white" id="sobre">
             <div className="px-5 lg:px-10 flex flex-col items-center pb-15">
                 <div className="text-center">
                     <h1 className={`text-5xl  text-[#C7A62B] font-bold tracking-wide ${playFair.className}`}>

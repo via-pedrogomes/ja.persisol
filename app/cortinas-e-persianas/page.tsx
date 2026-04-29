@@ -20,7 +20,7 @@ export const metadata = {
 
 export default function CortinasPage() {
     return (
-        <div className="py-20">
+        <div className="py-20 bg-white">
             <div>
                 <div className="text-center px-5 mb-10">
                     <h1 className={`text-5xl  text-[#C7A62B] font-bold tracking-wide ${playFair.className}`}>Cortinas e Persianas em Curitiba</h1>
