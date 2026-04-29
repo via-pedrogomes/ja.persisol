@@ -9,7 +9,7 @@ import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
 
-function VideoItem({ src }: { src: string }) {
+function VideoItem({ src, poster }: { src: string; poster:string }) {
     const videoRef = useRef<HTMLVideoElement>(null)
     const [isPlaying, setIsPlaying] = useState(false)
 
@@ -33,6 +33,8 @@ function VideoItem({ src }: { src: string }) {
                 ref={videoRef}
                 className="w-full h-full object-cover cursor-pointer"
                 muted
+                preload="metadata"
+                poster={poster}
                 playsInline
                 onClick={handleVideoClick}
                 onPause={() => setIsPlaying(false)}
@@ -81,23 +83,23 @@ export default function CarrosselVideos() {
             >
 
                 <SwiperSlide>
-                    <VideoItem src="/videos/video1.mp4" />
+                    <VideoItem src="/videos/video5.mp4" poster="/videos/thumb5.jpeg" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <VideoItem src="/videos/video2.mp4" />
+                    <VideoItem src="/videos/video2.mp4" poster="/videos/thumb2.jpeg" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <VideoItem src="/videos/video3.mp4" />
+                    <VideoItem src="/videos/video3.mp4" poster="/videos/thumb3.jpeg"/>
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <VideoItem src="/videos/video4.mp4" />
+                    <VideoItem src="/videos/video4.mp4" poster="/videos/thumb4.jpeg"/>
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <VideoItem src="/videos/video5.mp4" />
+                    <VideoItem src="/videos/video1.mp4" poster="/videos/thumb1.jpeg"/>
                 </SwiperSlide>
 
             </Swiper>

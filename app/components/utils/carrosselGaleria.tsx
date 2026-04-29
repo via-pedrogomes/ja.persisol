@@ -22,58 +22,67 @@ export default function Carousel() {
         <div className="relative">
 
             <Swiper
-    modules={[Navigation, Autoplay]}
-    loop={true}
-    navigation={{
-        nextEl: ".next-btn",
-        prevEl: ".prev-btn",
-    }}
-    autoplay={{
-    delay: 3000,
-    disableOnInteraction: false,
-  }}
-    spaceBetween={20}
-    speed={1500}
-    slidesPerView={1}
-    breakpoints={{
-        640: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
-    }}
->
+                modules={[Navigation, Autoplay]}
+                loop={true}
+
+                navigation={{
+                    nextEl: ".next-btn",
+                    prevEl: ".prev-btn",
+                }}
+                autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false,
+                }}
+                lazyPreloadPrevNext={2}
+                watchSlidesProgress={true}
+                observer={true}
+                observeParents={true}
+
+                spaceBetween={20}
+                speed={1500}
+                slidesPerView={1}
+                breakpoints={{
+                    640: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 },
+                }}
+            >
 
                 <SwiperSlide>
                     <div className="relative w-full h-70">
-                        <Image src={ft1} alt="1" fill className="object-cover" />
+                        <Image src={ft1} alt="1" fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw"
+  priority />
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div className="relative w-full h-70">
-                        <Image src={ft2} alt="2" fill className="object-cover" />
+                        <Image src={ft2} alt="2" fill className="object-cover"  sizes="(max-width: 768px) 100vw, 33vw"
+  priority/>
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div className="relative w-full h-70">
-                        <Image src={ft3} alt="3" fill className="object-cover" />
+                        <Image src={ft3} alt="3" fill className="object-cover"  sizes="(max-width: 768px) 100vw, 33vw"
+  priority/>
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div className="relative w-full h-70">
-                        <Image src={ft4} alt="4" fill className="object-cover" />
+                        <Image src={ft4} alt="4" fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw"/>
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div className="relative w-full h-70">
-                        <Image src={ft5} alt="5" fill className="object-cover" />
+                        <Image src={ft5} alt="5" fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw"/>
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div className="relative w-full h-70">
-                        <Image src={ft6} alt="6" fill className="object-cover" />
+                        <Image src={ft6} alt="6" fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw"/>
                     </div>
                 </SwiperSlide>
 
